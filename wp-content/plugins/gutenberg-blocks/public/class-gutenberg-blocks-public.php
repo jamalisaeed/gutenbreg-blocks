@@ -100,4 +100,57 @@ class Gutenberg_Blocks_Public {
 
 	}
 
+	public function gutenberg_blocks_color_palette() {
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name' => __( 'strong magenta', 'gutenberg-blocks' ),
+				'slug' => 'strong-magenta',
+				'color' => '#a156b4',
+			),
+			array(
+				'name' => __( 'light grayish magenta', 'gutenberg-blocks' ),
+				'slug' => 'light-grayish-magenta',
+				'color' => '#d0a5db',
+			),
+			array(
+				'name' => __( 'very light gray', 'gutenberg-blocks' ),
+				'slug' => 'very-light-gray',
+				'color' => '#eee',
+			),
+			array(
+				'name' => __( 'very dark gray', 'gutenberg-blocks' ),
+				'slug' => 'very-dark-gray',
+				'color' => '#444',
+			),
+		) );
+
+		//add support for editor font sizes
+		add_theme_support( 'editor-font-sizes', array(
+			array(
+				'name' => __( 'small', 'gutenberg-blocks' ),
+				'shortName' => __( 'S', 'gutenberg-blocks' ),
+				'size' => 12,
+				'slug' => 'small'
+			),
+			array(
+				'name' => __( 'regular', 'gutenberg-blocks' ),
+				'shortName' => __( 'M', 'gutenberg-blocks' ),
+				'size' => 16,
+				'slug' => 'regular'
+			),
+			array(
+				'name' => __( 'larger', 'gutenberg-blocks' ),
+				'shortName' => __( 'L', 'gutenberg-blocks' ),
+				'size' => 36,
+				'slug' => 'larger'
+			),
+			array(
+				'name' => __( 'huge', 'gutenberg-blocks' ),
+				'shortName' => __( 'XL', 'gutenberg-blocks' ),
+				'size' => 50,
+				'slug' => 'huge'
+			)
+		) );
+	}
+	
 }
